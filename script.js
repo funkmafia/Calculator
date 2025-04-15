@@ -89,7 +89,10 @@ document.addEventListener("keydown", (event) => {
   if (!isNaN(event.key)) {
     handleNumberInput(event.key);
   } else if (["+", "-", "*", "/", "×", "÷"].includes(event.key)) {
-    handleOperatorInput(event.key);
+    let operatorKey = event.key; 
+if (operatorKey === "*") operatorKey ="×"; // important change ! this helps translate the button to its operating function
+if (operatorKey === "/") operatorKey ="÷"; // important change ! this helps translate the button to its operating function
+    handleOperatorInput(operatorKey); // changed from event.key to operatorKey temparory variable that translates * to x and / to divide. 
   } else if (event.key === ".") {
     handleDecimal();
   } else if (event.key === "=" || event.key === "Enter") {
