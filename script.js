@@ -41,7 +41,7 @@ function handleOperatorInput (operator) {
     if (currentInput === '') return;     // stops users from hitting an op with nothing types in yet 
     previousInput = currentInput; // store the number just types (so can used it later when = is pressed)
     currentOperator = operator;  // saves the operator they selected
-    currentInput = '' // ready for the next number 
+    currentInput = ''; // ready for the next number 
     display.textContent = currentOperator; // gives the visual cue of what has been selectied
 }
 
