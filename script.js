@@ -81,3 +81,32 @@ function resetCalculator () {
     currentOperator = null; 
     display.textContent = '0';
 } 
+
+// Keyboard function // added to bottom as functions are already defined // grouped clearly at bottom for own section 
+
+document.addEventListener("keydown", (event) => {
+    if (!isNaN(event.key)) {
+        handleNumberInput(event.key);
+    } else if (['+', '-', '*', '/', '×', '÷'].includes(event.key)) {
+        handleOperatorInput(event.key); 
+    } else if (event.key === '.') {
+        handleDecimal();
+    } else if (event.key === '=' || event.key === 'Enter') {
+        handleEquals();
+    } else if (event.key === 'Backspace' || event.key.toLowerCase() === 'c') {
+        resetCalculator();
+    }
+    }); 
+
+// event.key - checks what key was pressed - located that way to use it to match or pass it into a function 
+// if (!NaN(event.key)) - decides if its a number - only want to call handleNumberInput() when valid 
+// handleNumberInput(event.key) - calls the function with that key - gives the function that actual number types
+// used else if instead of if 
+// event.key is always a string 
+// document.eventEventListener("keydown", (event) is the code for when a key is pressed !!!!!!! 
+
+// for highlighting keys on the keyboard !! 
+
+document.addEventListener("keypress", (event) => {
+    
+})
