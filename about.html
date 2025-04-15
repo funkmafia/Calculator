@@ -2,86 +2,109 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Calculator | Quick Maths </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Calculator | Quick Maths</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
     <nav class="bg-gray-300 w-full h-[10rem] px-4 py-6">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-            <h1 class="flex items-center text-5xl font-extrabold dark:text-white">Quick Maths<span
+            <h1 class="flex items-center text-5xl font-extrabold dark:text-white">
+                Quick Maths<span
                     class="bg-blue-100 text-blue-800 text-2xl font-semibold me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ms-2">PRO</span>
             </h1>
             <ul class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
-                <li><a href="index.html"><button type="button"
-                        class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">Get started</button></a></li>
-                <li><a href="about.html" class="text-gray-700 hover:text-gray-500 transition">About us</a></li>
-
+                <li>
+                    <a href="index.html"><button type="button"
+                            class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                            Get started
+                        </button></a>
+                </li>
+                <li>
+                    <a href="about.html" class="text-gray-700 hover:text-gray-500 transition">About us</a>
+                </li>
             </ul>
         </div>
     </nav>
-<main>
+    <main>
+        <section class="my-20 px-4">
+            <h3 class="text-2xl font-bold mb-8 text-center text-gray-800">
+                Meet the Team
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded shadow-md text-center">
+                    <img src="profile_jay_new.jpg" alt="Jay the debugger"
+                        class="w-full max-w-[200px] h-auto mx-auto rounded-full grayscale hover:grayscale-0 transition-all duration-300 mb-4" />
+                    <h4 class="text-xl font-semibold">Jay “The Debugger”</h4>
+                    <p class="text-sm text-gray-500">
+                        JS whisperer & design perfectionist. Debugs in his sleep. So much
+                        so, jay is known as The Debugger
+                    </p>
+                </div>
 
-    <section class="my-20 px-4">
-        <h3 class="text-2xl font-bold mb-8 text-center text-gray-800">Meet the Team</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          
-          <!-- Example Card -->
-          <div class="bg-white p-6 rounded shadow-md text-center">
-            <img src="profile_jay_new.jpg" alt="Jay the debugger" class="mx-auto w-40 h-40 rounded-full grayscale hover:grayscale-0 mb-4">
-            <h4 class="text-xl font-semibold">Jay “The Debugger”</h4>
-            <p class="text-sm text-gray-500">JS whisperer & design perfectionist. Debugs in his sleep. So much so, jay is known as The Debugger</p>
-          </div>
-          
-          <div class="bg-white p-6 rounded shadow-md text-center">
-            <img src="profile_ali.jpg" alt="Ali the architect" class="mx-auto w-40 h-40 rounded-full grayscale hover:grayscale-0 mb-4">
-            <h4 class="text-xl font-semibold">Ali “The Architect”</h4>
-            <p class="text-sm text-gray-500">Pixel-perfect layouts, tailwind tactician, and semantic HTML evangelist. If it's on screen, Ali mapped it out first.</p>
-          </div>
+                <div class="bg-white p-6 rounded shadow-md text-center">
+                    <img src="profile_ali.jpg" alt="Ali the architect"
+                        class="w-full max-w-[200px] h-auto mx-auto rounded-full grayscale hover:grayscale-0 transition-all duration-300 mb-4" />
+                    <h4 class="text-xl font-semibold">Ali “The Architect”</h4>
+                    <p class="text-sm text-gray-500">
+                        Pixel-perfect layouts, tailwind tactician, and semantic HTML
+                        evangelist. If it's on screen, Ali mapped it out first.
+                    </p>
+                </div>
 
-          <div class="bg-white p-6 rounded shadow-md text-center">
-            <img src="profile_maya.jpg" alt="Maya the maker" class="mx-auto w-40 h-40 rounded-full grayscale hover:grayscale-0 mb-4">
-            <h4 class="text-xl font-semibold">Maya “The Maker”</h4>
-            <p class="text-sm text-gray-500">Knows how users think before they do. Designs with empathy, colors with feeling, and never forgets mobile-first.</p>
-          </div>
-        </div>
-      </section>
+                <div class="bg-white p-6 rounded shadow-md text-center">
+                    <img src="profile_maya.jpg" alt="Maya the maker"
+                        class="w-full max-w-[200px] h-auto mx-auto rounded-full grayscale hover:grayscale-0 transition-all duration-300 mb-4" />
+                    <h4 class="text-xl font-semibold">Maya “The Maker”</h4>
+                    <p class="text-sm text-gray-500">
+                        Knows how users think before they do. Designs with empathy, colors
+                        with feeling, and never forgets mobile-first.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <section class="my-16 px-4">
-        <h3 class="text-2xl font-bold mb-8 text-center text-gray-800">About Quick Maths PRO x FunkMafia</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+        <section class="my-16 px-4">
+            <h3 class="text-2xl font-bold mb-8 text-center text-gray-800">
+                About Quick Maths PRO x FunkMafia
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+                <!-- Left image -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="funkmafia_calculator.jpg" alt="Broken down calculator"
+                        class="w-80 h-80 block mx-auto transition-all duration-300 filter grayscale hover:grayscale-0 rounded-lg" />
+                    <!-- block ensures the image behaves like a block, and mx-auto adds left and right margin -->
+                </div>
 
-          <!-- Left: Image -->
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <img 
-              src="funkmafia_calculator.jpg" 
-              alt="Broken down calculator"
-              class="w-80 h-80 block mx-auto transition-all duration-300 filter grayscale hover:grayscale-0 rounded-lg" 
-            /> <!-- block ensures the image behaves like a block, and mx-auto adds left and right margin -->
-          </div>
-      
-          <!-- Right: About Text -->
-          <div class="bg-white p-6 rounded-lg shadow-md text-center">
-            <p class="text-lg justify-between ">
-              Welcome to <strong>Quick Maths PRO</strong>, the result of a wild, late-night collab between the logic-driven minds of <span class="font-semibold text-black-800">FunkMafia</span> and the fast-tapping number wizards behind Quick Maths. What started as a fun side project quickly spiraled into a full-blown obsession with creating the smoothest, smartest calculator web app out there. Think of us as the duo who turned calculator keystrokes into a symphony of precision, speed, and style.
-              <br><br>
-              Whether you're crunching serious numbers or just figuring out if you can afford that extra oat milk latte, Quick Maths PRO has your back. Built with love, caffeine, and way too many console logs.
-            </p>
-          </div>
-        </div>
-      </section>
-      
-</main>
-    <script>
+                <!-- Right: About us text -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <p class="text-lg justify-between">
+                        Welcome to <strong>Quick Maths PRO</strong>, the result of a wild,
+                        late-night collab between the logic-driven minds of
+                        <span class="font-semibold text-black-800">FunkMafia</span> and
+                        the fast-tapping number wizards behind Quick Maths. What started
+                        as a fun side project quickly spiraled into a full-blown obsession
+                        with creating the smoothest, smartest calculator web app out
+                        there. Think of us as the duo who turned calculator keystrokes
+                        into a symphony of precision, speed, and style. <br /><br />
+                        Whether you're crunching serious numbers or just figuring out if
+                        you can afford that extra oat milk latte, Quick Maths PRO has your
+                        back. Built with love, caffeine, and way too many console logs.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script></script>
 
-    </script>
-    
     <footer class="bg-gray-300 w-full h-[6rem] px-4 py-6">
-        <p class="text-lg text-gray-700" > © 2025 Copyright FunkMafia, Inc. All rights reserved.</p>
+        <p class="text-lg text-gray-700">
+            © 2025 Copyright FunkMafia, Inc. All rights reserved.
+        </p>
     </footer>
-    
-    </body>
-    </html>
+</body>
+
+</html>

@@ -26,39 +26,56 @@
 
     <main>
         <section>
-            <div id = "calculator" class="w-full max-w-md bg-gray-300 p-6 mx-auto my-8 rounded-xl shadow-md"> <!-- full width until max-w-md stops it, padding all around, centered horizontally(mx-auto) and spaced vertically(my-8)
+            <div id="calculator" class="w-full max-w-md bg-gray-300 p-6 mx-auto my-8 rounded-xl shadow-md"> <!-- full width until max-w-md stops it, padding all around, centered horizontally(mx-auto) and spaced vertically(my-8)
                 -->
-                <div
-                    id = "result" class="w-full my-4 bg-gray-100 rounded-xl shadow-md text-right text-4xl font-mono px-6 p-4 overflow-x-auto h-[80px]">
+                <div id="result"
+                    class="w-full my-4 bg-gray-100 rounded-xl shadow-md text-right text-4xl font-mono px-6 p-4 overflow-x-auto h-[80px]">
                     <!-- w-full gives full width, text-right aligns numbers to the right (like a real calc), text-4xl makes the number big and bold, font-mono gives it that digital style, p-4 adds inner padding, 
  [new] overflow-x-auto let long numbers scroll horizontally if needed, [new] h-[80px] fixes a consistent height for the display.
                     -->
                 </div>
                 <div class="grid grid-cols-4 grid-rows-5 gap-2 my-4">
                     <!-- Row 1 -->
-                    <button  data-number type="button" class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">7</button>
-                    <button data-number type="button" class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">8</button>
-                    <button data-number type="button" class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">9</button>
-                    <button data-operator type="button" class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">÷</button>
+                    <button data-number type="button"
+                        class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">7</button>
+                    <button data-number type="button"
+                        class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">8</button>
+                    <button data-number type="button"
+                        class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">9</button>
+                    <button data-operator type="button"
+                        class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">÷</button>
 
                     <!-- Row 2 -->
-                    <button  data-number type="button" class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">4</button>
-                    <button  data-number type="button" class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">5</button>
-                    <button  data-number type="button" class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">6</button>
-                    <button data-operator type="button" class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">×</button>
+                    <button data-number type="button"
+                        class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">4</button>
+                    <button data-number type="button"
+                        class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">5</button>
+                    <button data-number type="button"
+                        class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">6</button>
+                    <button data-operator type="button"
+                        class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">×</button>
 
                     <!-- Row 3 -->
-                    <button  data-number type="button" class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">1</button>
-                    <button  data-number type="button" class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">2</button>
-                    <button  data-number type="button" class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">3</button>
-                    <button data-operator type="button" class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">−</button>
+                    <button data-number type="button"
+                        class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">1</button>
+                    <button data-number type="button"
+                        class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">2</button>
+                    <button data-number type="button"
+                        class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">3</button>
+                    <button data-operator type="button"
+                        class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">−</button>
 
                     <!-- Row 4 -->
-                    <button  data-number type="button" class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">0</button>
-                    <button data-decimal type="button" class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">.</button>
-                    <button data-equals type="button" class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">=</button>
-                    <button data-operator type="button" class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">+</button>
-                    <button id = "clearCalc" data-clear type="button" class="bg-red-200 hover:bg-gray-300 text-xl rounded py-4">C.E</button>
+                    <button data-number type="button"
+                        class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">0</button>
+                    <button data-decimal type="button"
+                        class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">.</button>
+                    <button data-equals type="button"
+                        class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">=</button>
+                    <button data-operator type="button"
+                        class="bg-blue-200 hover:bg-gray-300 text-xl rounded py-4">+</button>
+                    <button id="clearCalc" data-clear type="button"
+                        class="bg-red-200 hover:bg-gray-300 text-xl rounded py-4">C.E</button>
                     <h3 class="text-4xl font-extrabold col-span-3 text-center mt-6 mb-2">CASIO ©</h3>
                 </div>
             </div>
@@ -69,92 +86,17 @@
                 <h2>💡 Tip: Use your keyboard for faster calculations!</h2>
             </div>
         </section>
-
-        <!-- ADD TO ANOTHER PAGE MAYBE?? 
-        <section>
-          <div class="w-full my-4 bg-gray-300 rounded-xl shadow-md px-4 p-2">
-            <h3 class="text-xl font-extrabold text-center mt-4 mb-2">Recent calculations:</h3>
-            <div
-            class="w-full my-4 bg-gray-100 rounded-xl shadow-md text-right text-4xl font-mono px-6 p-4 overflow-x-auto h-[80px]">
-        </div>
-        </div>
-        </section>
-  -->
-
     </main>
 
 
-<script src="script.js">
+    <script src="script.js">
 
-    /* data types - 8 fundemantal data types 
-    1. number 
-    2. BigInt (any numnber greater than 252-1 or less than -253-1 with n appended (123n) 
-    3. string '..' or "..." 
-    4. boolean - true or false 
-    5. Null - represents the intentional absense of a value 
-    6. undefined - denoted by the keyword, means that a given value deos not exist 
-    7. symbol - useful complex code - symboles for unique identifiers 
-    8. object - collections of related data 
-    first 7 are considered primitive data types */
+    </script>
 
-    /* 
-    Method - use methods by appending an instance with a period (.dot), the name of the method
-    amd the opening and closing parentheses 'example string'.methodName()'
-    or console.log('hello'.toUpperCase()); prints HELLO 
-    or console.log('Hey'.startsWith('H')); prints true
-    */
-
-    /* Built-in onbects - they have their own methods like a math object .random
-    console.log(Math.random()); // prints out a random number between 0 and 1 
-    Math.random()*50; 
-    Math.floor(Math.random() * 50); // generates a random number between 0 and 1, then * by 50, then math.floor rounds 
-    the number down tot he nearest whole number. */ 
-
-    /* 
-        Variables - the container for a value. provide a way of labeling data with a name. 
-        1. create var with descriptive name
-        2. store or update info stores in var
-        3. reference or 'get' info stores in var 
-        4. cannot be the same as keywords 
-
-        var myName = 'Arya'
-        console.log(myName); 
-
-        variable: let - can be reassigned 
-        let meal = 'pizza'
-        console.log(meal)
-        meal = 'burrito'
-        console.log(meal) 
-    */
-
-    /* mathmetical assignement operators 
-    let w = 4
-    w = w +1; console.log(w) or 
-
-    let levelUp = 10 
-    levelUp += 5; // value is 15 
-
-    let multiplyMe = 32
-    multiplyMe *= 11 // value is 352 
-    */
-
-    /* typeof operator - checks the value to its right and returns or passes back
-    a stering of data. 
-    const unknown1 = 'foo';
-    console.log(typeof unknown1); // Output: string
-
-    const unknown2 = 10;    
-    console.log(typeof unknown2); // Output: number
-
-    const unknown3 = true; 
-    console.log(typeof unknown3); // Output: boolean
-    */
-
-</script>
-
-<footer class="bg-gray-300 w-full h-[6rem] px-4 py-6">
-    <p class="text-lg text-gray-700" > © 2025 Copyright FunkMafia, Inc. All rights reserved.</p>
-</footer>
+    <footer class="bg-gray-300 w-full h-[6rem] px-4 py-6">
+        <p class="text-lg text-gray-700"> © 2025 Copyright FunkMafia, Inc. All rights reserved.</p>
+    </footer>
 
 </body>
+
 </html>
