@@ -10,6 +10,7 @@
 </head>
 
 <body class="min-h-screen flex flex-col">
+    <!-- === NAVIGATION BAR === -->
     <nav class="bg-gray-300 w-full h-[10rem] px-4 py-6">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
             <h1 class="flex items-center text-5xl font-extrabold dark:text-white">
@@ -29,13 +30,16 @@
             </ul>
         </div>
     </nav>
-    <main  class="flex-grow">
+
+    <main class="flex-grow">
+        <!-- ==== MEET THE TEAM === -->
         <section class="my-20 px-4">
             <h3 class="text-2xl font-bold mb-8 text-center text-gray-800">
                 Meet the Team
             </h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded shadow-md text-center">
+                <div
+                    class="bg-white p-6 rounded shadow-md text-center hover:shadow-lg hover:scale-[1.02] transition-transform duration-200 ease-in-out">
                     <img src="profile_jay_new.jpg" alt="Jay the debugger"
                         class="w-full max-w-[200px] h-auto mx-auto rounded-full grayscale hover:grayscale-0 transition-all duration-300 mb-4" />
                     <h4 class="text-xl font-semibold">Jay “The Debugger”</h4>
@@ -45,7 +49,8 @@
                     </p>
                 </div>
 
-                <div class="bg-white p-6 rounded shadow-md text-center">
+                <div
+                    class="bg-white p-6 rounded shadow-md text-center hover:shadow-lg hover:scale-[1.02] transition-transform duration-200 ease-in-out">
                     <img src="profile_ali.jpg" alt="Ali the architect"
                         class="w-full max-w-[200px] h-auto mx-auto rounded-full grayscale hover:grayscale-0 transition-all duration-300 mb-4" />
                     <h4 class="text-xl font-semibold">Ali “The Architect”</h4>
@@ -55,7 +60,8 @@
                     </p>
                 </div>
 
-                <div class="bg-white p-6 rounded shadow-md text-center">
+                <div
+                    class="bg-white p-6 rounded shadow-md text-center hover:shadow-lg hover:scale-[1.02] transition-transform duration-200 ease-in-out">
                     <img src="profile_maya.jpg" alt="Maya the maker"
                         class="w-full max-w-[200px] h-auto mx-auto rounded-full grayscale hover:grayscale-0 transition-all duration-300 mb-4" />
                     <h4 class="text-xl font-semibold">Maya “The Maker”</h4>
@@ -67,20 +73,23 @@
             </div>
         </section>
 
+        <!-- ==== ABOUT SECTION ==== -->
         <section class="my-16 px-4">
             <h3 class="text-2xl font-bold mb-8 text-center text-gray-800">
                 About Quick Maths PRO x FunkMafia
             </h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
                 <!-- Left image -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:scale-[1.02] transition-transform duration-200 ease-in-out">
                     <img src="funkmafia_calculator.jpg" alt="Broken down calculator"
                         class="w-80 h-80 block mx-auto transition-all duration-300 filter grayscale hover:grayscale-0 rounded-lg" />
                     <!-- block ensures the image behaves like a block, and mx-auto adds left and right margin -->
                 </div>
 
                 <!-- Right: About us text -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg hover:scale-[1.02] transition-transform duration-200 ease-in-out">
                     <p class="text-lg justify-between">
                         Welcome to <strong>Quick Maths PRO</strong>, the result of a wild,
                         late-night collab between the logic-driven minds of
@@ -98,8 +107,7 @@
             </div>
         </section>
     </main>
-    <script></script>
-
+    <!-- ==== FOOTER === -->
     <footer class="bg-gray-300 w-full h-[6rem] px-4 py-6">
         <p class="text-lg text-gray-700">
             © 2025 Copyright FunkMafia, Inc. All rights reserved.

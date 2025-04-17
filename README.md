@@ -18,7 +18,7 @@ Welcome to **Quick Maths PRO**, the ultimate web-based calculator built with pre
 ## 🛠️ Tech Stack
 
 - HTML5
-- CSS3 (with Tailwind)
+- CSS3 (with TailWind)
 - JavaScript (Vanilla)
 - Git + GitHub for version control
 
@@ -29,9 +29,8 @@ Welcome to **Quick Maths PRO**, the ultimate web-based calculator built with pre
 ---
 
 Calculator/
-├── index.html
+├── index.html (with TailWind)
 ├── about.html
-├── style.css
 ├── script.js
 ├── README.md
 ├── images/
@@ -56,6 +55,9 @@ Calculator/
 - Structuring JavaScript into clean, modular logic
 - DOM manipulation and event delegation
 - Responsive design with Tailwind classes
+
+## 🧠 Area's I struggled and want to work on
+- Structuring the logic inside the functions 
 
 ---
 

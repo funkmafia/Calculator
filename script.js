@@ -41,13 +41,13 @@ function handleOperatorInput(operator) {
   previousInput = currentInput; // store the number just types (so can used it later when = is pressed)
   currentOperator = operator; // saves the operator they selected
   currentInput = ""; // ready for the next number
-  display.textContent = currentOperator; // gives the visual cue of what has been selectied
+  display.textContent = currentOperator; // this displays the chosen slector to confirm input before next number
 }
 
 function handleEquals() {
   if (currentInput === "" || previousInput === "" || currentOperator === null)
     return;
-
+  // below logic converts the string input to floats for calculation
   const num1 = parseFloat(previousInput);
   const num2 = parseFloat(currentInput);
   let result = 0;
@@ -63,13 +63,14 @@ function handleEquals() {
   }
 
   display.textContent = result;
-  currentInput = result.toString();
+  currentInput = result.toString(); // important !! stores the result for further chaining etc
   previousInput = "";
   currentOperator = null;
 }
 
 function handleDecimal() {
   if (!currentInput.includes(".")) {
+    // this prevents adding multiple decimals like 4.5.6.7
     currentInput += ".";
     display.textContent = currentInput;
   }
@@ -83,16 +84,18 @@ function resetCalculator() {
   display.textContent = "0";
 }
 
+// === 5. KEYBOARD SUPPORT ===
+
 // Keyboard function // added to bottom as functions are already defined // grouped clearly at bottom for own section
 
 document.addEventListener("keydown", (event) => {
   if (!isNaN(event.key)) {
     handleNumberInput(event.key);
   } else if (["+", "-", "*", "/", "×", "÷"].includes(event.key)) {
-    let operatorKey = event.key; 
-if (operatorKey === "*") operatorKey ="×"; // important change ! this helps translate the button to its operating function
-if (operatorKey === "/") operatorKey ="÷"; // important change ! this helps translate the button to its operating function
-    handleOperatorInput(operatorKey); // changed from event.key to operatorKey temparory variable that translates * to x and / to divide. 
+    let operatorKey = event.key;
+    if (operatorKey === "*") operatorKey = "×"; // important change! this helps translate the button to its operating function - same
+    if (operatorKey === "/") operatorKey = "÷";
+    handleOperatorInput(operatorKey); // changed from event.key to operatorKey temparory variable that translates * to x and / to divide.
   } else if (event.key === ".") {
     handleDecimal();
   } else if (event.key === "=" || event.key === "Enter") {
